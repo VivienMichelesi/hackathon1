@@ -1,0 +1,70 @@
+.link {
+  display: contents;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 2fr auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "image image"
+    "name price"
+    "category category";
+
+  width: var(--product-card-size);
+  padding: 0.25rem;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: box-shadow 0.25s ease;
+}
+
+.link:hover .card {
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 16px 0px;
+}
+
+.image {
+  grid-area: image;
+  justify-self: center;
+
+  object-fit: contain;
+  max-height: 250px;
+  width: 100%;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.price {
+  grid-area: price;
+
+  font-size: 1.2rem;
+}
+.name {
+  grid-area: name;
+  margin: 0;
+
+  font-size: 1.2rem;
+}
+.category {
+  grid-area: category;
+}
+
+.figure,
+.figureCaption {
+  display: contents;
+}
+
+/* ProductCardList */
+.list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--product-card-size), 1fr)
+  );
+  justify-content: center;
+}
+
+.listItem {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
