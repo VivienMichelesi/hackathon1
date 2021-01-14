@@ -18,6 +18,11 @@ font-family: 'Lato', sans-serif;
 
 :root {
   --product-card-size: min(400px, 90%);
+
+  --blue: #00a1f1;
+  --green: #7cbb00;
+  --yellow: #ffbb00;
+  --orange: #f65314;
 }
 
 html,
