@@ -17,13 +17,13 @@ const links = [
   {
     title: "Enlightenment by the truth",
     description: "Achieve enlightenment",
-    url: "/the_truth",
+    url: "/Coaching",
   },
 
   {
     title: "Join Us !",
     description: "Praise the windows",
-    url: "/Join_us",
+    url: "/JoinUs",
   },
 
   {
@@ -35,7 +35,7 @@ const links = [
   {
     title: "A propos !",
     description: "Praise the windows",
-    url: "/about",
+    url: "/apropos/Apropos",
   },
 ];
 
