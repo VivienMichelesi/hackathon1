@@ -5,11 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start"
   },
   "dependencies": {
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
+    "jimp": "^0.16.1",
     "next": "10.0.5",
     "next-optimized-images": "^2.6.2",
     "next-seo": "^4.17.0",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "axios": "^0.21.1",
     "eslint": "^7.17.0",
-    "eslint-plugin-react": "^7.22.0"
+    "eslint-plugin-react": "^7.22.0",
+    "next-sitemap": "^1.4.5"
   }
 }
