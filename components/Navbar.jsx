@@ -19,6 +19,12 @@ const links = [
     description: "Achieve enlightenment",
     url: "/the_truth",
   },
+
+  {
+    title: "Join Us !",
+    description: "Praise the windows",
+    url: "/Join_us",
+  },
 ];
 
 export default function Navbar({ title, description, url }) {
