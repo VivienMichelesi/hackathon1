@@ -6,12 +6,14 @@ dependencies:
   next-seo: 4.17.0_27fda0060d237a6cfdb35db406171e5f
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
+  react-hook-form: 6.14.1_react@17.0.1
   slug: 4.0.2
   webp-loader: 0.6.0
 devDependencies:
   axios: 0.21.1
   eslint: 7.17.0
   eslint-plugin-react: 7.22.0_eslint@7.17.0
+  next-sitemap: 1.4.5_next@10.0.5
 lockfileVersion: 5.2
 packages:
   /@ampproject/toolbox-core/2.7.4:
@@ -98,6 +100,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-jBD+G8+LWpMBBWvVcdr4QysjUE4mU/syrhN17o1u3gx0/WzJB1kwiVZAXRtWbsIPOwW8pF/YJV5+nmetPzepXg==
+  /@corex/deepmerge/2.5.3:
+    dev: true
+    resolution:
+      integrity: sha512-9q+jWQ6zqBc7iU2ItxYcoA+G/QUxPt0eo7d3PVNy30HOCpIEX/oZPmtoC3+XSJNyHdV39MGrq+EIpVh81jcapw==
   /@eslint/eslintrc/0.2.2:
     dependencies:
       ajv: 6.12.6
@@ -2005,6 +2011,12 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+  /escape-string-regexp/4.0.0:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
   /eslint-plugin-react/7.22.0_eslint@7.17.0:
     dependencies:
       array-includes: 3.1.2
@@ -3800,6 +3812,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
+  /matcher/3.0.0:
+    dependencies:
+      escape-string-regexp: 4.0.0
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-OkeDaAZ/bQCxeFAozM55PKcKU0yJMPGifLwV4Qgjitu+5MoAfSQN4lsLJeXZ1b8w0x+/Emda6MZgXS1jvsapng==
   /md5.js/1.3.5:
     dependencies:
       hash-base: 3.1.0
@@ -3941,7 +3961,6 @@ packages:
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
   /minimist/1.2.5:
-    dev: false
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /mississippi/3.0.0:
@@ -4085,6 +4104,18 @@ packages:
       react-dom: ^16.0.0 || ^17.0.0
     resolution:
       integrity: sha512-/hnb3oq7bhi8s7bup7+Lm6VzzgRucj+JrWtp+dJiYs/04H0N/NhmE9MpepixQ16fFj6G/39JLYxhzsO/QZG/Kw==
+  /next-sitemap/1.4.5_next@10.0.5:
+    dependencies:
+      '@corex/deepmerge': 2.5.3
+      matcher: 3.0.0
+      minimist: 1.2.5
+      next: 10.0.5_react-dom@17.0.1+react@17.0.1
+    dev: true
+    hasBin: true
+    peerDependencies:
+      next: '*'
+    resolution:
+      integrity: sha512-gi7xeBiJrzcSJekT0xRh26KEEU8c+v4yenzy3BDehvm2rXzl2tOFbUoSESuQkv8iHm2Gz5WC8Og297t/VRGmkw==
   /next-tick/1.0.0:
     dev: false
     resolution:
@@ -5073,6 +5104,14 @@ packages:
       react: 17.0.1
     resolution:
       integrity: sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
+  /react-hook-form/6.14.1_react@17.0.1:
+    dependencies:
+      react: 17.0.1
+    dev: false
+    peerDependencies:
+      react: ^16.8.0 || ^17
+    resolution:
+      integrity: sha512-Bf2fWcL2F34hUUqrx1rpgZ8ZErQ4/DvrPs6Je+lUYL59km8PXIQqyCTz/NbggC1RQUj7rChSmTx6eFap+mCttw==
   /react-is/16.13.1:
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -6644,7 +6683,9 @@ specifiers:
   next: 10.0.5
   next-optimized-images: ^2.6.2
   next-seo: ^4.17.0
+  next-sitemap: ^1.4.5
   react: 17.0.1
   react-dom: 17.0.1
+  react-hook-form: ^6.14.1
   slug: ^4.0.2
   webp-loader: ^0.6.0
