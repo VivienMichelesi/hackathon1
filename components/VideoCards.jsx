@@ -3,7 +3,7 @@ import styles from "./VideoCards.module.css";
 
 const videoLinks = [
   {
-    title: " Devenir développeur par l'apprentissage ou par la foi ? ",
+    title: " Devenir développeur apprendre ou avoir la foi ? ",
     urlKey: "https://www.youtube.com/embed/WrWkiojtxWQ",
     description: "Pour être il faut croire",
     accès: "novice",
@@ -55,9 +55,9 @@ export default function VideoCards({ title, url, description }) {
             width="560"
             height="315"
             src={videoLink.urlKey}
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullscreen
             className={styles.video}
           >
             {videoLink.description}

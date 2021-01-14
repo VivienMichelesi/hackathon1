@@ -1,15 +1,15 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import styles from "./ShopLesson.module.css";
-import VideoCards from "./VideoCards.jsx";
+import Link from "next/link";
 
-export default function ShopLesson({}) {
+export default function ShopLesson() {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data) => console.log(data);
 
   console.log(errors.firstname);
 
-  const url = "https://www.youtube.com/embed/WrWkiojtxWQ?end=10&controls=0";
+  const url = "https://www.youtube.com/embed/WrWkiojtxWQ?end=5&controls=0";
   return (
     <div className={styles.pitch}>
       <h2>Accomplir son destin en 6 étapes.</h2>
@@ -26,15 +26,15 @@ export default function ShopLesson({}) {
       </p>
       <cards className={styles.videoCard}>
         <h2 className={styles.title}>
-          " Devenir développeur par l'apprentissage ou par la foi ? "
+          Devenir développeur, apprendre ou avoir la foi ?
         </h2>
         <iframe
           width="560"
           height="315"
           src={url}
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullscreen
           className={styles.video}
         >
           Pour être il faut croire
@@ -96,7 +96,12 @@ export default function ShopLesson({}) {
           </div>
         </div>
       </form>
-      <button type="button">Payer</button>
+      <Link href="/VideoCards">
+        <a title="Réussir dans la vie">
+          Grâce à notre programme prenez votre vie en main et atteignez vos
+          objectifs
+        </a>
+      </Link>
     </div>
   );
 }
