@@ -13,7 +13,7 @@ const links = [
   {
     title: "Shop",
     description: "Essential of the believer",
-    url: "/Market",
+    url: "/shop/[[...category]]",
   },
 
   {

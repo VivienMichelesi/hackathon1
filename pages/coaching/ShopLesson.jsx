@@ -34,7 +34,7 @@ export default function ShopLesson() {
           src={url}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullscreen
+          allowFullScreen
           className={styles.video}
         >
           Pour être il faut croire
