@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ShopLesson.module.css";
-import "./VideoCards.jsx";
+import VideoCards from "./VideoCards.jsx";
 
 export default function ShopLesson({}) {
   const url = "https://www.youtube.com/embed/WrWkiojtxWQ?end=10&controls=0";
@@ -36,6 +36,7 @@ export default function ShopLesson({}) {
       </cards>
       <h3>Adhérer à notre programme pour devenir le meilleur codeur</h3>
       <button type="button">Payer</button>
+      <VideoCards />
     </div>
   );
 }
