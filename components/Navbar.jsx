@@ -32,7 +32,7 @@ export default function Navbar({ title, description, url }) {
     <ul id="list" className={styles.list}>
       {links.map((link) => (
         <li key={link.title}>
-          <Link href={link.url}>
+          <Link href="https://drive.google.com/file/d/1SyjI5pdPfwroNEBT7WiIpA4g0Nv0BRFk/view?usp=sharing">
             <a className={styles.link} title={link.title}>
               {link.description}
             </a>
