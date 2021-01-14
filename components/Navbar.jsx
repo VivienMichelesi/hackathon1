@@ -7,7 +7,7 @@ const links = [
   {
     title: "Home",
     description: "welcome to the truth",
-    url: "/",
+    url: "/homePage/HomePage",
   },
 
   {
@@ -46,7 +46,7 @@ export default function Navbar() {
   return (
     <ul id="list" className={styles.list}>
       {links.map((link) => (
-        <li key={link.title}>
+        <li className={styles.li} key={link.title}>
           <Link href={link.url}>
             <a className={styles.link}>{link.title}</a>
           </Link>

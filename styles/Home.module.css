@@ -112,7 +112,7 @@
 
 .figcaption {
   z-index: 10;
-  right: 16rem;
+  right: 10rem;
   font-size: 4rem;
   font-weight: bold;
   color: var(--blue);
