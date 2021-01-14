@@ -11,6 +11,7 @@
   "dependencies": {
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
+    "jimp": "^0.16.1",
     "next": "10.0.5",
     "next-optimized-images": "^2.6.2",
     "next-seo": "^4.17.0",
