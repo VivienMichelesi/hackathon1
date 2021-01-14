@@ -5,7 +5,7 @@ import VideoCards from "./VideoCards.jsx";
 export default function ShopLesson({}) {
   const url = "https://www.youtube.com/embed/WrWkiojtxWQ?end=10&controls=0";
   return (
-    <div className={styles.lesson}>
+    <div className={styles.pitch}>
       <h2>Accomplir son destin en 6 étapes.</h2>
       <p>
         Afin d’améliorer les choses dans tous les domaines de la société, la
@@ -35,7 +35,9 @@ export default function ShopLesson({}) {
         </iframe>
       </cards>
       <h3>Adhérer à notre programme pour devenir le meilleur codeur</h3>
-      <button type="button">Payer</button>
+      <button type="button" on>
+        Payer
+      </button>
       <VideoCards />
     </div>
   );
