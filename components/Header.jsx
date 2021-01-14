@@ -12,13 +12,6 @@ export default function Header() {
           id="windowsBanniere"
         ></img>
       </Link>
-      <Navbar>
-        <meta
-          name="viewport"
-          content="barre de navigation"
-          key="menu de navigation"
-        />
-      </Navbar>
     </header>
   );
 }
