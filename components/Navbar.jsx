@@ -45,7 +45,7 @@ export default function Navbar() {
   const { openPanel, setOpenPanel, products } = useContext(CartContext);
 
   const cartQuantity = useMemo(
-    () => products.reduce((sum, product) => sum + product.quantity, 0),
+    () => products?.reduce((sum, product) => sum + product.quantity, 0),
     [products]
   );
 
