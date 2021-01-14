@@ -251,8 +251,8 @@ export function getProductBySlug(slug) {
 }
 
 export function getAllCategories() {
-  const categories = new Set([products.map((p) => p.category)]);
-  return [...categories];
+  const categories = new Set(products.map((p) => p.category));
+  return [...categories].sort();
 }
 
 export function getProductsByCategory(category) {
@@ -262,25 +262,24 @@ export function getProductsByCategory(category) {
 export function searchProducts({ query, category, level, sort }) {
   let products = getAllProducts();
 
-  if (category != null) {
+  if (category != null && category.length > 0) {
     products = products.filter((p) => p.category === category);
   }
 
   if (query != null && query.length > 0) {
+    const lowerQuery = query.toLowerCase();
     products = products.filter((p) =>
-      p.name.toLowerCase().includes(query.toLowerCase())
+      p.name.toLowerCase().includes(lowerQuery)
     );
   }
 
-  if (sort != null) {
-    if (sort.direction === "ASC") {
-      products = products.sort((a, b) =>
-        a[sort.property] > b[sort.property] ? 1 : -1
-      );
+  if (sort != null && sort.length > 0) {
+    const [property, direction] = sort.split("-");
+
+    if (direction === "asc") {
+      products = products.sort((a, b) => (a[property] > b[property] ? 1 : -1));
     } else {
-      products = products.sort((a, b) =>
-        a[sort.property] < b[sort.property] ? 1 : -1
-      );
+      products = products.sort((a, b) => (a[property] < b[property] ? 1 : -1));
     }
   }
 
