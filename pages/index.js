@@ -21,6 +21,19 @@ export default function Home() {
             <a>Nous contacter</a>
           </Link>
         </p>
+        <section>
+          <figure className={styles.containerImg}>
+            <img
+              className={styles.bannerImg}
+              src="/images\W10.png"
+              // src={require("../public/images/W10.png?webp")}
+              alt="Image de windows 10"
+            />
+            <figcaption className={styles.figcaption}>
+              Join Us or Next.js
+            </figcaption>
+          </figure>
+        </section>
       </main>
     </div>
   );

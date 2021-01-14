@@ -98,3 +98,27 @@
     flex-direction: column;
   }
 }
+.containerImg {
+  width: 100%;
+  height: auto;
+}
+
+.bannerImg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.figcaption {
+  z-index: 10;
+  right: 16rem;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--blue);
+  top: 60vh;
+  position: absolute;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  letter-spacing: -3px;
+  margin: 0;
+}
