@@ -8,6 +8,7 @@ export function ProductCard({ product }) {
         <article className={styles.card}>
           <figure className={styles.figure}>
             <img className={styles.image} src={product.image} alt="" />
+
             <figcaption className={styles.figureCaption}>
               <h2 className={styles.name}>{product.name}</h2>
               <strong className={styles.price}>{product.price} €</strong>
