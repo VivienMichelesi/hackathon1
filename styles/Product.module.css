@@ -1,0 +1,50 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 0px 1rem;
+  grid-template-areas:
+    "title title"
+    "image description"
+    "image price"
+    "image button";
+}
+
+.title {
+  grid-area: title;
+  justify-self: center;
+  text-align: center;
+}
+.image {
+  grid-area: image;
+  justify-self: right;
+
+  object-fit: contain;
+  max-width: min(250px, 80%);
+}
+.description {
+  grid-area: description;
+}
+.price {
+  grid-area: price;
+
+  font-size: 1.5rem;
+}
+.buyButton {
+  grid-area: button;
+  place-self: start;
+
+  margin-top: 1rem;
+  padding: 0.5rem;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

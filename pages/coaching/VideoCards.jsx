@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./VideoCards.module.css";
+import styles from "../../styles/VideoCards.module.css";
 
 const videoLinks = [
   {

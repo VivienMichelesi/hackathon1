@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import styles from "./ShopLesson.module.css";
+import styles from "../../styles/ShopLesson.module.css";
 import Link from "next/link";
 
 export default function ShopLesson() {
@@ -96,7 +96,7 @@ export default function ShopLesson() {
           </div>
         </div>
       </form>
-      <Link href="/VideoCards">
+      <Link href="/coaching/VideoCards">
         <a title="Réussir dans la vie">
           Grâce à notre programme prenez votre vie en main et atteignez vos
           objectifs

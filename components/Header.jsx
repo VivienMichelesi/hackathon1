@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 
 export default function Header() {
+<<<<<<< HEAD
   return (
     <div>
       <Navbar>
@@ -11,5 +12,9 @@ export default function Header() {
         />
       </Navbar>
     </div>
+=======
+  return(
+    
+>>>>>>> main
   );
 }

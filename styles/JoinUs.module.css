@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-width: 992px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.h1,
+.h2,
+.h3 {
+  color: var(--yellow);
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 10rem;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: larger;
+  width: 100%;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.input {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-right: 0.25rem;
+  margin-left: 0;
+  color: var(--blue);
+  background-color: #ffffff;
+  border-color: var(--blue);
+  font-size: larger;
+}
+
+.span {
+  color: red;
+}
+
+.colorGreen {
+  color: var(--green);
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
