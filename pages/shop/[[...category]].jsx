@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { ProductCardList } from "../../components/ProductCard";
 import { getAllCategories, searchProducts } from "../../products";
 import { useEffectAfterMount, debounce } from "../../utils";
+import styles from "../../styles/Shop.module.css";
 
 export default function Shop({ products, allCategories }) {
   const router = useRouter();
@@ -41,7 +42,7 @@ export default function Shop({ products, allCategories }) {
   }, [searchQuery]);
 
   return (
-    <div>
+    <div className={styles.shop}>
       <NextSeo
         title={`Nos produits ${category ? `(${category})` : ""}`}
         /* noindex if query params in url*/
@@ -49,9 +50,10 @@ export default function Shop({ products, allCategories }) {
       />
 
       {/* Filters */}
-      <aside>
-        <form>
-          <label htmlFor="input-search-query">
+      <aside className={styles.filters}>
+        <h2>Affiner la recherche</h2>
+        <form className={styles.form}>
+          <label className={styles.label} htmlFor="input-search-query">
             Recherche
             <input
               id="input-search-query"
@@ -62,7 +64,7 @@ export default function Shop({ products, allCategories }) {
             />
           </label>
 
-          <label htmlFor="input-sort">
+          <label className={styles.label} htmlFor="input-sort">
             Trier par :
             <select
               id="input-sort"
@@ -79,11 +81,15 @@ export default function Shop({ products, allCategories }) {
             </select>
           </label>
 
-          <fieldset>
+          <fieldset className={styles.fieldset}>
             <legend>Catégorie</legend>
 
             {allCategories.map((categ) => (
-              <label key={categ} htmlFor={`input-category-${categ}`}>
+              <label
+                className={styles.radioLabel}
+                key={categ}
+                htmlFor={`input-category-${categ}`}
+              >
                 <input
                   id={`input-category-${categ}`}
                   type="radio"
@@ -98,9 +104,11 @@ export default function Shop({ products, allCategories }) {
         </form>
       </aside>
 
-      <main>
+      <main className={styles.products}>
         <ProductCardList products={products} />
       </main>
+
+      <aside className={styles.cart}>[CART HERE]</aside>
     </div>
   );
 }

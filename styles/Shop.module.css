@@ -1,0 +1,50 @@
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "filters products cart";
+}
+.filters {
+  grid-area: filters;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0.5rem;
+}
+.products {
+  grid-area: products;
+}
+.cart {
+  grid-area: cart;
+}
+
+.form,
+.label {
+  display: contents;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0;
+
+  text-transform: capitalize;
+}
+
+@media (max-width: 767.98px) {
+  .shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters {
+    width: var(--product-card-size);
+  }
+}

@@ -277,9 +277,13 @@ export function searchProducts({ query, category, level, sort }) {
     const [property, direction] = sort.split("-");
 
     if (direction === "asc") {
-      products = products.sort((a, b) => (a[property] > b[property] ? 1 : -1));
+      products = [...products].sort((a, b) =>
+        a[property] > b[property] ? 1 : -1
+      );
     } else {
-      products = products.sort((a, b) => (a[property] < b[property] ? 1 : -1));
+      products = [...products].sort((a, b) =>
+        a[property] < b[property] ? 1 : -1
+      );
     }
   }
 
