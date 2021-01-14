@@ -25,17 +25,27 @@ const links = [
     description: "Praise the windows",
     url: "/Join_us",
   },
+
+  {
+    title: "Nous contacter !",
+    description: "Praise the windows",
+    url: "/contacts",
+  },
+
+  {
+    title: "A propos !",
+    description: "Praise the windows",
+    url: "/about",
+  },
 ];
 
-export default function Navbar({ title, description, url }) {
+export default function Navbar() {
   return (
     <ul id="list" className={styles.list}>
       {links.map((link) => (
         <li key={link.title}>
           <Link href={link.url}>
-            <a className={styles.link} title={link.title}>
-              {link.description}
-            </a>
+            <a className={styles.link}>{link.title}</a>
           </Link>
         </li>
       ))}
