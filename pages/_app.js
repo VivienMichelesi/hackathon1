@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import CartContext from "../contexts/CartContext";
 import { useEffect, useState } from "react";
 import Cart from "../components/Cart";
@@ -59,6 +60,7 @@ function MyApp({ Component, pageProps }) {
         remove: removeCartProduct,
       }}
     >
+      <Header />
       <Navbar />
       <Component {...pageProps} />
       <Footer />

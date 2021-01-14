@@ -1,0 +1,25 @@
+.lesson {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #FFBB00;
+  
+}
+
+.videoCard{
+  align-items: center;
+  width: 33%;
+  
+}
+
+.video{
+  border: #00A1F1 1rem solid ;
+}
+
+.title{
+  height: 2em;
+  max-width: 80%;
+  color: #F65314;
+  
+}
