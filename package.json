@@ -5,14 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap --config next-sitemap.config.js && next-on-netlify",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start"
   },
   "dependencies": {
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "next": "10.0.5",
-    "next-on-netlify": "^2.8.1",
     "next-optimized-images": "^2.6.2",
     "next-seo": "^4.17.0",
     "react": "17.0.1",
