@@ -1,10 +1,10 @@
 import Head from "next/head";
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/APropos.module.css";
 import Link from "next/link";
 
 export default function Apropos() {
   return (
-    <div className={styles.container}>
+    <div className={`container ${styles.container}`}>
       <Head>
         <title>A propos de Ben</title>
         <link rel="icon" href="/images/windows" />
@@ -24,6 +24,7 @@ export default function Apropos() {
         </figure>
         <p>
           <strong>Qui est Benoit L. Hubert?</strong>
+          <br />
           Notre sauveteur était un utopiste informatien qui à dédier sa vie à
           transmettre sa connaissance à des personnes en recherche d'un avenir
           meilleur. Il est malheuressement limité par un facteur souvent

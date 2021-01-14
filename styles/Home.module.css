@@ -1,21 +1,3 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer {
   width: 100%;
   height: 100px;
@@ -108,57 +90,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 5em;
-  border-radius: 50%;
-}
-
-.reseau {
-  width: 33%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: stretch;
-}
-
-.github {
-  width: 33%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: flex-end;
-}
-
-.return {
-  width: 33%;
-}
-
-.figure {
-  border: thin #c0c0c0 solid;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  max-width: 1760px;
-  margin: auto;
-}
-
-.imgApropos {
-  max-width: 1760px;
-  max-height: 1200px;
-}
-
-.figcaption {
-  background-color: #222;
-  color: #fff;
-  font: italic smaller sans-serif;
-  padding: 3px;
-  text-align: center;
 }
 
 @media (max-width: 600px) {

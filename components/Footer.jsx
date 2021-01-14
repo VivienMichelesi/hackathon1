@@ -1,9 +1,9 @@
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Footer.module.css";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <section className={styles.return}>
         <Link href="/">
           <a>Home</a>
