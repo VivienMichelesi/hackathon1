@@ -1,16 +1,19 @@
-import Head from 'next/head'
-import Navbar from '../components/Navbar';
-import ShopLesson from '../components/ShopLesson';
-import VideoCards from '../components/VideoCards';
-import styles from '../styles/Home.module.css';
-
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div>
-    
-    <ShopLesson />
-    
+    <div className={styles.container}>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      
+
+     
     </div>
-  )
+  );
 }
