@@ -1,7 +1,5 @@
-import Head from "next/head";
 import { ProductCardList } from "../components/ProductCard";
 import { getAllProducts } from "../products";
-import styles from "../styles/Home.module.css";
 
 export default function Home({ products }) {
   return (

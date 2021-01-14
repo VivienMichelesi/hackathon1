@@ -7,7 +7,7 @@ const rawProducts = [
     price: 109.95,
     description:
       "Le fauteuil-toilettes, pour en finir avec les commissions pendant les sessions gaming. ",
-    category: "gadjet",
+    category: "gadget",
     image:
       "http://static.hitek.fr/img/actualite/top-14-gadgets-indispensables.jpg",
   },
@@ -17,7 +17,7 @@ const rawProducts = [
     price: 22.3,
     description:
       "L'oreiller-Autruche, pour dormir en paix dans n'importe quelle condition.",
-    category: "gadjet",
+    category: "gadget",
     image: "http://static.hitek.fr/img/actualite/next-level-office-7.jpg",
   },
   {
@@ -26,7 +26,7 @@ const rawProducts = [
     price: 24.99,
     description:
       "Un mini-frigo USB, pour garder ses boissons fraîches près de l'ordinateur",
-    category: "gadjet",
+    category: "gadget",
     image:
       "http://static.hitek.fr/img/actualite/top-14-gadgets-indispensables4.jpg",
   },
@@ -36,7 +36,7 @@ const rawProducts = [
     price: 15.99,
     description:
       "Un casque à bière, même si on peut y mettre n'importe quelle boisson. Pratique en toutes circonstances.",
-    category: "gadjet",
+    category: "gadget",
     image:
       "http://static.hitek.fr/img/actualite/top-14-gadgets-indispensables6.jpg",
   },
@@ -45,7 +45,7 @@ const rawProducts = [
     name: "aspirateur USB",
     price: 6.99,
     description: "Un aspirateur USB, pour nettoyer son bureau ou son clavier.",
-    category: "gadjet",
+    category: "gadget",
     image:
       "http://static.hitek.fr/img/actualite/top-14-gadgets-indispensables8.jpg",
   },
@@ -55,7 +55,7 @@ const rawProducts = [
     price: 15.99,
     description:
       "Une tasse isotherme et auto-touillante, parce que utiliser une cuillère c'est vraiment trop crevant (et ça date d'un autre siècle).",
-    category: "gadjet",
+    category: "gadget",
     image:
       "http://static.hitek.fr/img/actualite/top-14-gadgets-indispensables10.png",
   },
@@ -65,7 +65,7 @@ const rawProducts = [
     price: 9.99,
     description:
       "Transporter sont PC presque aussi facilement que sont ordinateur portable",
-    category: "gadjet",
+    category: "gadget",
     image:
       "https://i.pinimg.com/originals/ea/3b/57/ea3b57e6bdfa6adb5d4f57e3ff35f0ab.jpg",
   },
@@ -75,7 +75,7 @@ const rawProducts = [
     price: 24.9,
     description:
       "Ce chauffe-pieds Usb permet de garder les pieds au chaud pendant les longues journées d'hiver passées devant l'ordinateur...",
-    category: "gadjet",
+    category: "gadget",
     image:
       "https://www.rapid-cadeau.com/3115-large_default/chauffe-pieds-usb.jpg",
   },
@@ -85,7 +85,7 @@ const rawProducts = [
     price: 7.99,
     description:
       "Le punching ball de proximité, pour éviter de se défouler sur son PC",
-    category: "gadjet",
+    category: "gadget",
     image: "http://static.hitek.fr/img/actualite/next-level-office-14.jpg",
   },
   {
@@ -93,7 +93,7 @@ const rawProducts = [
     name: "combiné pour téléphone portable",
     price: 4.99,
     description: "un combiné pour téléphone portable",
-    category: "gadjet",
+    category: "gadget",
     image:
       "http://static.hitek.fr/img/actualite/combine-pour-telephone-portable.jpg",
   },
@@ -102,7 +102,7 @@ const rawProducts = [
     name: "boule de lumière USB",
     price: 11.89,
     description: "Une boule de lumière USB",
-    category: "gadjet",
+    category: "gadget",
     image: "http://static.hitek.fr/img/actualite/w_boule-plasma-usb.jpg",
   },
   {
@@ -110,7 +110,7 @@ const rawProducts = [
     name: "hamac pour les pieds ",
     price: 3.89,
     description: "Un hamac pour les pieds",
-    category: "gadjet",
+    category: "gadget",
     image: "http://static.hitek.fr/img/actualite/next-level-office-9.jpg",
   },
   {
@@ -118,7 +118,7 @@ const rawProducts = [
     name: "chauffe mains",
     price: 9.99,
     description: "Les chauffe mains en forme de tartines",
-    category: "gadjet",
+    category: "gadget",
     image: "http://static.hitek.fr/img/actualite/next-level-office-17.jpg",
   },
   {
@@ -135,7 +135,7 @@ const rawProducts = [
     name: "chemise climatisée",
     price: 56.99,
     description: "Une chemise climatisée",
-    category: "gedjet",
+    category: "gadget",
     image: "http://static.hitek.fr/img/actualite/next-level-office-21.jpg",
   },
   {
@@ -259,10 +259,30 @@ export function getProductsByCategory(category) {
   return productsByCategories[category];
 }
 
-export function searchProducts({ category, sort, level }) {
+export function searchProducts({ query, category, level, sort }) {
   let products = getAllProducts();
 
   if (category != null) {
     products = products.filter((p) => p.category === category);
   }
+
+  if (query != null && query.length > 0) {
+    products = products.filter((p) =>
+      p.name.toLowerCase().includes(query.toLowerCase())
+    );
+  }
+
+  if (sort != null) {
+    if (sort.direction === "ASC") {
+      products = products.sort((a, b) =>
+        a[sort.property] > b[sort.property] ? 1 : -1
+      );
+    } else {
+      products = products.sort((a, b) =>
+        a[sort.property] < b[sort.property] ? 1 : -1
+      );
+    }
+  }
+
+  return products;
 }
