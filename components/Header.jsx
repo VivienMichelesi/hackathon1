@@ -1,5 +1,6 @@
 import styles from "../styles/Header.module.css";
 import Link from "next/link";
+import Navbar from "./Navbar";
 
 export default function Header() {
   return (
@@ -11,6 +12,13 @@ export default function Header() {
           id="windowsBanniere"
         ></img>
       </Link>
+      <Navbar>
+        <meta
+          name="viewport"
+          content="barre de navigation"
+          key="menu de navigation"
+        />
+      </Navbar>
     </header>
   );
 }

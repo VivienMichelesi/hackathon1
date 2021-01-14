@@ -13,13 +13,13 @@ const links = [
   {
     title: "Shop",
     description: "Essential of the believer",
-    url: "/Market",
+    url: "/shop/[[...category]]",
   },
 
   {
     title: "L'éveil par la vérité",
     description: "Achieve enlightenment",
-    url: "/Coaching",
+    url: "/coaching/ShopLesson",
   },
 
   {
