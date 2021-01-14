@@ -10,7 +10,7 @@ export default function Cart() {
   const totalPrice = useMemo(
     () =>
       products
-        .reduce((sum, product) => sum + product.price * product.quantity, 0)
+        ?.reduce((sum, product) => sum + product.price * product.quantity, 0)
         .toFixed(2),
     [products]
   );
@@ -32,9 +32,9 @@ export default function Cart() {
       <h2 className={styles.title}>Votre panier</h2>
 
       <ul suppressHydrationWarning={true}>
-        {products.length === 0
+        {products?.length === 0
           ? "Votre panier est vide :("
-          : products.map((product) => (
+          : products?.map((product) => (
               <li key={product.id}>
                 <article className={styles.cartProduct}>
                   <img

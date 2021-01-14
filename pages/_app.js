@@ -8,7 +8,12 @@ import Cart from "../components/Cart";
 function MyApp({ Component, pageProps }) {
   const [cartProducts, setCartProducts] = useState(() => {
     try {
-      return JSON.parse(sessionStorage.getItem("cart", cartProducts));
+      const json = sessionStorage.getItem("cart", cartProducts);
+      if (json == null) {
+        return [];
+      }
+
+      return JSON.parse(json) ?? [];
     } catch {
       return [];
     }
