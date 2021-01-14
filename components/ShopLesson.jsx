@@ -41,8 +41,6 @@ export default function ShopLesson({}) {
         </iframe>
       </cards>
 
-      <VideoCards />
-
       <h3>Adhérer à notre programme pour devenir le meilleur codeur</h3>
 
       {/* form  */}
