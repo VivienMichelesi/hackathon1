@@ -11,31 +11,25 @@ const links = [
   },
 
   {
-    title: "Market",
+    title: "Shop",
     description: "Essential of the believer",
     url: "/Market",
   },
 
   {
-    title: "Enlightenment by the truth",
+    title: "L'éveil par la vérité",
     description: "Achieve enlightenment",
     url: "/Coaching",
   },
 
   {
-    title: "Join Us !",
+    title: "nous rejoindre",
     description: "Praise the windows",
     url: "/JoinUs",
   },
 
   {
-    title: "Nous contacter !",
-    description: "Praise the windows",
-    url: "/contacts",
-  },
-
-  {
-    title: "A propos !",
+    title: "A propos",
     description: "Praise the windows",
     url: "/apropos/Apropos",
   },
