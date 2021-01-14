@@ -1,10 +1,11 @@
 import { ProductJsonLd } from "next-seo";
 import { NextSeo } from "next-seo";
+import styles from "../../styles/Product.module.css";
 import { getAllProducts, getProductBySlug } from "../../products";
 
 export default function Product({ product }) {
   return (
-    <article>
+    <main className={`container ${styles.product}`}>
       <NextSeo
         title={product.name}
         description={product.description}
@@ -28,7 +29,16 @@ export default function Product({ product }) {
           availability: "https://schema.org/InStock",
         }}
       />
-    </article>
+
+      <h1 className={styles.title}>{product.name}</h1>
+      <img
+        className={styles.image}
+        src={require(`../../public${product.image}?webp`)}
+        alt=""
+      />
+      <p className={styles.description}>{product.description}</p>
+      <strong className={styles.price}>{product.price} €</strong>
+    </main>
   );
 }
 

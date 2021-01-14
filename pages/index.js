@@ -1,6 +1,11 @@
 import Head from "next/head";
+<<<<<<< HEAD
 import JoinUS from "./JoinUs";
 import styles from "../styles/Home.module.css";
+=======
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
+>>>>>>> main
 
 export default function Home() {
   return (
@@ -10,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+<<<<<<< HEAD
       <JoinUS />
 
       <footer className={styles.footer}>
@@ -22,6 +28,15 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
+=======
+      <main className={styles.main}>
+        <p className="lienApropos">
+          <Link href="/apropos/Apropos">
+            <a>A propos</a>
+          </Link>
+        </p>
+      </main>
+>>>>>>> main
     </div>
   );
 }

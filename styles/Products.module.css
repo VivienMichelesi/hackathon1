@@ -1,0 +1,37 @@
+.cardGroup {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.card {
+  min-height: 50vh;
+  width: 18rem;
+  padding: 0 0.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.img {
+  height: 280px;
+  width: 100%;
+  display: block;
+}
+
+.cardTitle {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px;
+}
