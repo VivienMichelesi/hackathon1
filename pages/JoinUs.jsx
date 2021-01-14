@@ -151,7 +151,7 @@ export default function JoinUs() {
       <div className={styles.row}>
         <div className={styles.formGroup}>
           <label htmlFor="Expiry_date" className={styles.label}>
-            Date d'expiration (MM/AA)*
+            Date d&apos;expiration (MM/AA)*
             <input
               type="text"
               className={styles.input}
