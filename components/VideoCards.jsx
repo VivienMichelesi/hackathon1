@@ -45,7 +45,7 @@ const videoLinks = [
   },
 ];
 
-export default function VideoCards({ titel, url, description }) {
+export default function VideoCards({ title, url, description }) {
   return (
     <div className={styles.lesson}>
       {videoLinks.map((videoLink) => (
