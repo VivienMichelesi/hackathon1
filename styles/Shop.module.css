@@ -1,9 +1,9 @@
 .shop {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: "filters products cart";
+  grid-template-areas: "filters products";
 }
 .filters {
   grid-area: filters;

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import styles from "./Navbar.module.css";
+import CartContext from "../contexts/CartContext";
+import { useContext, useMemo } from "react";
 
 const links = [
   {
@@ -40,6 +42,13 @@ const links = [
 ];
 
 export default function Navbar() {
+  const { openPanel, setOpenPanel, products } = useContext(CartContext);
+
+  const cartQuantity = useMemo(
+    () => products.reduce((sum, product) => sum + product.quantity, 0),
+    [products]
+  );
+
   return (
     <ul id="list" className={styles.list}>
       {links.map((link) => (
@@ -49,6 +58,24 @@ export default function Navbar() {
           </Link>
         </li>
       ))}
+
+      <li>
+        <button
+          className={styles.openCartButton}
+          aria-expanded={openPanel.toString()}
+          aria-controls="cart"
+          onClick={() => {
+            setOpenPanel(!openPanel);
+          }}
+        >
+          {openPanel ? "Fermer" : "Ouvrir"} le panier
+          {cartQuantity > 0 && (
+            <span className={styles.cartCount} title="Articles dans le panier">
+              {cartQuantity}
+            </span>
+          )}
+        </button>
+      </li>
     </ul>
   );
 }

@@ -2,8 +2,12 @@ import { ProductJsonLd } from "next-seo";
 import { NextSeo } from "next-seo";
 import styles from "../../styles/Product.module.css";
 import { getAllProducts, getProductBySlug } from "../../products";
+import CartContext from "../../contexts/CartContext";
+import { useContext } from "react";
 
 export default function Product({ product }) {
+  const { add } = useContext(CartContext);
+
   return (
     <main className={`container ${styles.product}`}>
       <NextSeo
@@ -38,6 +42,15 @@ export default function Product({ product }) {
       />
       <p className={styles.description}>{product.description}</p>
       <strong className={styles.price}>{product.price} €</strong>
+      <button
+        className={styles.buyButton}
+        type="button"
+        onClick={() => {
+          add(product);
+        }}
+      >
+        Ajouter au panier
+      </button>
     </main>
   );
 }
