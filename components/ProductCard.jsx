@@ -7,8 +7,15 @@ export function ProductCard({ product }) {
       <a className={styles.link} title="Voir le produit">
         <article className={styles.card}>
           <figure className={styles.figure}>
-            <img className={styles.image} src={product.image} alt="" />
+            <img
+              className={styles.image}
+              src={require(`../public${product.image}?webp`)}
+              alt=""
+              width="400"
+              height="250"
+            />
 
+            <hr className={styles.separator} />
             <figcaption className={styles.figureCaption}>
               <h2 className={styles.name}>{product.name}</h2>
               <strong className={styles.price}>{product.price} €</strong>

@@ -92,9 +92,9 @@ export default function Shop({ products, allCategories }) {
               >
                 <input
                   id={`input-category-${categ}`}
-                  type="radio"
+                  type="checkbox"
                   value={categ}
-                  onClick={handleCategoryChange}
+                  onChange={handleCategoryChange}
                   checked={categ === category}
                 />
                 {categ}
