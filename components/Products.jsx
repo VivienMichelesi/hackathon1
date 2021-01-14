@@ -1,9 +1,13 @@
+import { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import { getAllProducts } from "../products2";
 import styles from "../styles/Products.module.css";
 
 export default function Products() {
   const products = getAllProducts();
+
+  const [productsToDisplay, setProductsToDisplay] = useState(products);
 
   return (
     <div className="Products">
@@ -25,7 +29,7 @@ export default function Products() {
         </button>
       </div>
       <div className={styles.cardGroup}>
-        {products.map((product) => (
+        {productsToDisplay.map((product) => (
           <div className={styles.card} key={products.id}>
             <img
               className={styles.img}
@@ -38,6 +42,9 @@ export default function Products() {
               <p className="description-text">{product.description}</p>
               <span className="price">{product.price}</span>
             </div>
+            <Link href="">
+              <a>Voir plus</a>
+            </Link>
           </div>
         ))}
       </div>
