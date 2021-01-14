@@ -1,0 +1,20 @@
+.openCartButton {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+
+  width: 1.5em;
+  height: 1.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  color: white;
+  background-color: var(--orange);
+}

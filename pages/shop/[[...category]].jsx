@@ -5,6 +5,7 @@ import { ProductCardList } from "../../components/ProductCard";
 import { getAllCategories, searchProducts } from "../../products";
 import { useEffectAfterMount, debounce } from "../../utils";
 import styles from "../../styles/Shop.module.css";
+import Cart from "../../components/Cart";
 
 export default function Shop({ products, allCategories }) {
   const router = useRouter();
@@ -107,8 +108,6 @@ export default function Shop({ products, allCategories }) {
       <main className={styles.products}>
         <ProductCardList products={products} />
       </main>
-
-      <aside className={styles.cart}>[CART HERE]</aside>
     </div>
   );
 }
