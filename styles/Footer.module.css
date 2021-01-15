@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   width: 100%;
-
+  background-color: var(--blue);
   flex-shrink: 0;
 }
 
