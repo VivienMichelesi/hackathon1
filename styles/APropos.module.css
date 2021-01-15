@@ -1,14 +1,15 @@
 .container {
-  min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+.text {
+  text-align: justify;
+  margin-bottom: 0;
 }
 
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -22,7 +23,7 @@
   flex-flow: column;
   padding: 5px;
   max-width: 1760px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .imgApropos {
@@ -36,4 +37,8 @@
   font: italic smaller sans-serif;
   padding: 3px;
   text-align: center;
+}
+
+.title {
+  font-size: 3em;
 }

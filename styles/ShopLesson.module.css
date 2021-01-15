@@ -1,41 +1,57 @@
-.paye{
+.paye {
   background-color: grey;
   border: solid black;
+
+  margin: 0.5rem;
 }
 
-.title{
-  text-align:center;
+.title {
+  text-align: center;
   font-size: 3em;
 }
 
-.motivate{
+.motivate {
   text-align: justify;
-
 }
 
-.videoCard{
+.videoCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
 }
 
-.video{
+.video {
   margin-right: 20%;
   margin-left: 20%;
 }
 
-.freeMind{
+.freeMind {
   text-align: center;
 }
-.container{
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 
-.paye{
+.paye {
   text-align: center;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 0.5rem;
+  place-items: end;
+}
+
+.formGroup,
+.label {
+  display: contents;
+}
+
+.formGroup input {
+  justify-self: start;
 }

@@ -1,5 +1,4 @@
 import styles from "../../styles/APropos.module.css";
-import Link from "next/link";
 import { NextSeo } from "next-seo";
 
 export default function Apropos() {
@@ -22,7 +21,7 @@ export default function Apropos() {
             Ben recevant l&apos;illumination de Saint Windows
           </figcaption>
         </figure>
-        <p>
+        <p className={styles.text}>
           <strong>Qui est Benoit L. Hubert?</strong>
           <br />
           Notre sauveteur était un utopiste informatien qui à dédier sa vie à
@@ -35,11 +34,6 @@ export default function Apropos() {
           grandeur de Windows.
         </p>
       </main>
-      <p>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </p>
     </div>
   );
 }

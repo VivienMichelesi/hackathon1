@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   width: 100%;
-  background-color: var(--blue);
+  background-color: #001976;
   flex-shrink: 0;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .reseau {
-  width: 33%;
+  width: 49%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -21,7 +21,7 @@
 }
 
 .github {
-  width: 33%;
+  width: 49%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

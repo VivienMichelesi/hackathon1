@@ -1,14 +1,8 @@
 import styles from "../styles/Footer.module.css";
-import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <section className={styles.return}>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </section>
       <section className={styles.github}>
         <a
           href="https://github.com/crebier-corentin"

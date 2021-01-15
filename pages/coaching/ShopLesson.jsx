@@ -24,7 +24,7 @@ export default function ShopLesson() {
         Fondation pour le bonheur au travers du code de Benoit, association
         laïque à but non lucratif, qui se trouve en Remote, est devenue le
         centre de coordination des activités à l’échelle mondiale. Grâce au
-        soutien de l’Eglise du saint Code, Le chemin du bonheur par le code et
+        soutien de l’Eglise du saint Code, le chemin du bonheur par le code et
         ses programmes et supports pédagogiques sont aujourd’hui utilisés un peu
         partout dans le monde et aident à inculquer un niveau plus élevé
         d’honnêteté, de confiance et de respect de soi au sein de toutes les
@@ -51,13 +51,13 @@ export default function ShopLesson() {
 
       <form className={styles.container} onSubmit={handleSubmit(onSubmit)}>
         <h3>
-          rejoingnez notre programme initiatique pour devenir le meilleur codeur
+          Rejoignez notre programme initiatique pour devenir le meilleur codeur
         </h3>
         <h1 className={styles.h1}>Détache toi de tes biens matériels</h1>
-        <div className={styles.row}>
+        <div className={styles.formGrid}>
           <div className={styles.formGroup}>
             <label htmlFor="cardname" className={styles.label}>
-              Nom inscrit sur la carte
+              Nom inscrit sur la carte{" "}
               <input
                 type="text"
                 className={styles.input}
@@ -77,17 +77,16 @@ export default function ShopLesson() {
               )}
             </label>
           </div>
-        </div>
-        <div className={styles.row}>
+
           <div className={styles.formGroup}>
             <label htmlFor="number" className={styles.label}>
-              Numéro de carte
+              Numéro de carte{" "}
               <input
                 type="text"
                 className={styles.input}
                 id="number"
                 name="number"
-                placeholder="numéro de carte"
+                placeholder="Numéro de carte"
                 ref={register({
                   required: "Vous devez entrer vos numéros de carte !",
                   maxLength: {
@@ -105,7 +104,7 @@ export default function ShopLesson() {
       </form>
 
       <p className={styles.freeMind}>
-        Pour accéder à l'illumination détachez vous de vos biens matériels
+        Pour accéder à l'illumination, détachez vous de vos biens matériels
       </p>
       <div className={styles.paye}>
         <Link href="/coaching/VideoCards">

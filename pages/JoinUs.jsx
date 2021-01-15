@@ -9,7 +9,10 @@ export default function JoinUs() {
   console.log(errors.firstname);
 
   return (
-    <form className={styles.container} onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className={`container ${styles.container}`}
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <NextSeo
         title="Rejoins Nous"
         description="Prenez part à la grande aventure !"
