@@ -1,14 +1,14 @@
-import Head from "next/head";
 import styles from "../../styles/APropos.module.css";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 export default function Apropos() {
   return (
     <div className={`container ${styles.container}`}>
-      <Head>
-        <title>A propos de Ben</title>
-        <link rel="icon" href="/images/windows" />
-      </Head>
+      <NextSeo
+        title="A propos de nous"
+        description="Venez découvrir notre équipe."
+      />
 
       <main className={styles.main}>
         <h1 className={styles.title}>A propos de Ben</h1>

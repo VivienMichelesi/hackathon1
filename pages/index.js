@@ -1,13 +1,13 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>Join Us or Next.js</title>
-        <link rel="icon" href="/windows.png" />
-      </Head>
+      <NextSeo
+        title="Join Us or Next.js"
+        description="Le site officiel de la Codologie avec initiation et boutique souvenir !"
+      />
       <main className={styles.main}>
         <figure className={styles.containerImg}>
           <img

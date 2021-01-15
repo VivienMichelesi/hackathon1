@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import { useForm } from "react-hook-form";
 import styles from "../styles/JoinUs.module.css";
 
@@ -9,6 +10,11 @@ export default function JoinUs() {
 
   return (
     <form className={styles.container} onSubmit={handleSubmit(onSubmit)}>
+      <NextSeo
+        title="Rejoins Nous"
+        description="Prenez part à la grande aventure !"
+      />
+
       <h1 className={styles.h1}>Rejoins nous</h1>
       <div className={styles.row}>
         <div className={styles.formGroup}>
