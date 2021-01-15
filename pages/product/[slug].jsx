@@ -37,7 +37,7 @@ export default function Product({ product }) {
       <h1 className={styles.title}>{product.name}</h1>
       <img
         className={styles.image}
-        src={require(`../../public${product.image}?webp`)}
+        src={require(`../public${product.image}?webp`)}
         alt=""
       />
       <p className={styles.description}>{product.description}</p>

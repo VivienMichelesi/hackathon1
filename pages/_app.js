@@ -62,7 +62,9 @@ function MyApp({ Component, pageProps }) {
     >
       <Header />
       <Navbar />
-      <Component {...pageProps} />
+      <div className="main-content">
+        <Component {...pageProps} />
+      </div>
       <Footer />
 
       <Cart />

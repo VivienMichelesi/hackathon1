@@ -1,0 +1,41 @@
+.paye{
+  background-color: grey;
+  border: solid black;
+}
+
+.title{
+  text-align:center;
+  font-size: 3em;
+}
+
+.motivate{
+  text-align: justify;
+
+}
+
+.videoCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.video{
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.freeMind{
+  text-align: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.paye{
+  text-align: center;
+}

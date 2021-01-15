@@ -3,23 +3,44 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #FFBB00;
+ 
   
 }
 
 .videoCard{
   align-items: center;
-  width: 33%;
+  width: 50%;
   
 }
 
 .video{
   border: #00A1F1 1rem solid ;
+  width : 60%
 }
 
 .title{
-  height: 2em;
+  height:5vh;
   max-width: 80%;
   color: #F65314;
   
+}
+
+.h1{
+  text-align: center;
+}
+
+@media (max-width: 767.98px) { 
+  .title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+.videoCard{
+  width :100%
+}
+.video{
+  width: 100%;
+}
+
 }

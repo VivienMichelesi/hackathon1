@@ -1,9 +1,8 @@
 .footer {
-  /* display: flex; */
-  position: absolute;
+  display: flex;
   width: 100%;
-  bottom: 0%;
-  height: 3em;
+  background-color: var(--blue);
+  flex-shrink: 0;
 }
 
 .logo {
@@ -33,4 +32,10 @@
 
 .return {
   width: 33%;
+}
+
+@media (max-width: 575.98px) {
+  .logo {
+    height: 2.5em;
+  }
 }

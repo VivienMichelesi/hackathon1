@@ -5,7 +5,6 @@ import { ProductCardList } from "../../components/ProductCard";
 import { getAllCategories, searchProducts } from "../../products";
 import { useEffectAfterMount, debounce } from "../../utils";
 import styles from "../../styles/Shop.module.css";
-import Cart from "../../components/Cart";
 
 export default function Shop({ products, allCategories }) {
   const router = useRouter();
@@ -46,6 +45,7 @@ export default function Shop({ products, allCategories }) {
     <div className={styles.shop}>
       <NextSeo
         title={`Nos produits ${category ? `(${category})` : ""}`}
+        description={`Boutique en lignede la Codologie. Tous nos produits ${category}.`}
         /* noindex if query params in url*/
         noindex={router.asPath.includes("?")}
       />
