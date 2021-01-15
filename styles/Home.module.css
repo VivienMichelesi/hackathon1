@@ -1,6 +1,9 @@
 .containerImg {
   width: 100%;
   height: auto;
+
+  margin: 0;
+  padding: 0;
 }
 
 .bannerImg {
@@ -19,4 +22,10 @@
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
   letter-spacing: -3px;
   margin: 0;
+}
+
+.codologie {
+text-align : justify;
+
+
 }

@@ -52,8 +52,6 @@ export default function VideoCards({ title, url, description }) {
         <cards className={styles.videoCard}>
           <h2 className={styles.title}>{videoLink.title}</h2>
           <iframe
-            width="90%"
-            height="auto"
             src={videoLink.urlKey}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
