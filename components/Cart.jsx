@@ -39,7 +39,7 @@ export default function Cart() {
                 <article className={styles.cartProduct}>
                   <img
                     className={styles.image}
-                    src={require(`../public${product.image}?webp`)}
+                    src={`../public${product.image}?webp`}
                     alt=""
                   />
                   <h3 className={styles.name}>{product.name}</h3>
