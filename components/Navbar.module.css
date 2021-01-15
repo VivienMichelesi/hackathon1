@@ -97,6 +97,15 @@
   }
 
   .list .li {
-    border: none !important;
+    font-size: 1.3rem;
+
+    border-left: 2px solid var(--green);
+    border-right: 2px solid var(--green);
+
+    margin: 0.25rem 0;
+  }
+
+  .li .link {
+    padding: 0.25rem 0;
   }
 }

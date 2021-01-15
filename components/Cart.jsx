@@ -31,41 +31,43 @@ export default function Cart() {
       </button>
       <h2 className={styles.title}>Votre panier</h2>
 
-      <ul suppressHydrationWarning={true}>
-        {products?.length === 0
-          ? "Votre panier est vide :("
-          : products?.map((product) => (
-              <li key={product.id}>
-                <article className={styles.cartProduct}>
-                  <img
-                    className={styles.image}
-                    src={/* require(`../public*/ `${product.image}?webp`}
-                    alt=""
-                  />
-                  <h3 className={styles.name}>{product.name}</h3>
-                  <strong className={styles.price}>{product.price}€</strong>
+      {products?.length === 0 ? (
+        <p>Votre panier est vide :(</p>
+      ) : (
+        <ul suppressHydrationWarning={true}>
+          {products?.map((product) => (
+            <li key={product.id}>
+              <article className={styles.cartProduct}>
+                <img
+                  className={styles.image}
+                  src={/* require(`../public*/ `${product.image}?webp`}
+                  alt=""
+                />
+                <h3 className={styles.name}>{product.name}</h3>
+                <strong className={styles.price}>{product.price}€</strong>
 
-                  <button
-                    className={styles.minus}
-                    onClick={() => {
-                      remove(product.id);
-                    }}
-                  >
-                    -
-                  </button>
-                  <span className={styles.quantity}>{product.quantity}</span>
-                  <button
-                    className={styles.plus}
-                    onClick={() => {
-                      add(product);
-                    }}
-                  >
-                    +
-                  </button>
-                </article>
-              </li>
-            ))}
-      </ul>
+                <button
+                  className={styles.minus}
+                  onClick={() => {
+                    remove(product.id);
+                  }}
+                >
+                  -
+                </button>
+                <span className={styles.quantity}>{product.quantity}</span>
+                <button
+                  className={styles.plus}
+                  onClick={() => {
+                    add(product);
+                  }}
+                >
+                  +
+                </button>
+              </article>
+            </li>
+          ))}
+        </ul>
+      )}
 
       <strong suppressHydrationWarning={true}>Total : {totalPrice}€</strong>
     </div>
