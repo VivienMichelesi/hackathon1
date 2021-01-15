@@ -190,7 +190,7 @@ const rawProducts = [
     name: "Inap@work : pour dormir au bureau sans se faire attraper ",
     price: 0,
     description:
-      "On en a tous rêvé : pouvoir s'assoupir quelques minutes au travail sans que votre boss ne remarque quoi que ce soit. Avec Inap@work, c'est désormais possible. Cette application simule tous les sons d'un travailleur en pleine activité : les doigts qui tapent sur le clavier, les clics de souris, les feuilles froissées, l'agrafeuse... Il est même possible de programmer une alarme pour se réveiller. Application gratuite uniquement disponible sur l'App Store. ",
+      "On en a tous rêvé : pouvoir s'assoupir quelques minutes au travail sans que votre boss ne remarque quoi que ce soit. Cette application simule tous les sons d'un travailleur en pleine activité : les doigts qui tapent sur le clavier, les clics de souris, les feuilles froissées, l'agrafeuse... Il est même possible de programmer une alarme pour se réveiller.",
     category: "application mobile",
     image:
       "https://www.anthedesign.fr/w2015/wp-content/uploads/2016/07/06.-inap@work.jpg.webp",
@@ -200,7 +200,7 @@ const rawProducts = [
     name: "Fake-A-Call Android iOS",
     price: 0,
     description:
-      "Imaginez-vous que quelqu'un vous dérange, et vous passez votre temps à regarder l’heure. Lancez l’application Fake-A-Call. Allez à la configuration rapide et programmez un appel de la part de « Maman » dans cinq minutes. Quand le portable se mettra à sonner, vous n’aurez qu’à décrocher et dire « Désolé, mais ça risque d'être long. » N’oubliez pas la grimace de regret sur le visage, et vous êtes sauvé. Disponible gratuitement sur iPhone et Android, Fake-à-Call a été téléchargée des millions de fois.",
+      "Imaginez-vous que quelqu'un vous dérange, et vous passez votre temps à regarder l’heure. Lancez l’application Fake-A-Call. Allez à la configuration rapide et programmez un appel de la part de « Maman » dans cinq minutes. Quand le portable se mettra à sonner, vous n’aurez qu’à décrocher et dire « Désolé, mais ça risque d'être long. » .",
     category: "application mobile",
     image:
       "https://www.anthedesign.fr/w2015/wp-content/uploads/2016/07/01.-fake-a-call.jpeg",
@@ -220,7 +220,7 @@ const rawProducts = [
     name: "Crack Your Screen Prank Android",
     price: 0,
     description:
-      "Avec cette application gratuite, l’écran de votre smartphone paraitra fissuré ou rayé, et vous pourrez utiliser une autre application en même temps. Avec l’option « fissure en différé » qui ne fait craquer l’écran qu’après un certain temps d’utilisation du smartphone, Crack Your Screen Prank vous permettra également de faire des blagues à vos proches.",
+      "Avec cette application gratuite, l’écran de votre smartphone paraitra fissuré ou rayé, et vous pourrez utiliser une autre application en même temps. Avec l’option « fissure en différé » qui ne fait craquer l’écran qu’après un certain temps d’utilisation du smartphone.",
     category: "application mobile",
     image:
       "https://www.anthedesign.fr/w2015/wp-content/uploads/2016/07/09.-crack-your-screen-prank-1.png",
