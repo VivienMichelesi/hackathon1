@@ -12,8 +12,7 @@ export default function Home() {
         <figure className={styles.containerImg}>
           <img
             className={styles.bannerImg}
-            src="/images\W10.png"
-            // src={require("../public/images/W10.png?webp")}
+            src={require("../public/images/W10.png?webp")}
             alt="Image de windows 10"
           />
         </figure>
