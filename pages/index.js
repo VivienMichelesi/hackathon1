@@ -17,7 +17,7 @@ export default function Home() {
             alt="Image de windows 10"
           />
         </figure>
-        <p className={styles.codologie}>La Codologie n’est pas une religion, c’est la réalité mise au jour par Benoit L. Hubert. elle fournit à l’individu une voie précise menant à une compréhension totale de sa vraie nature spirituelle et des rapports qu’il entretient avec lui-même, sa famille, les groupes, l’humanité, toutes les formes de vie, l’univers matériel, l’univers spirituel, l’Être suprême et le code.
+        <p className={` container ${styles.codologie}`}>La Codologie n’est pas une religion, c’est la réalité mise au jour par Benoit L. Hubert. elle fournit à l’individu une voie précise menant à une compréhension totale de sa vraie nature spirituelle et des rapports qu’il entretient avec lui-même, sa famille, les groupes, l’humanité, toutes les formes de vie, l’univers matériel, l’univers spirituel, l’Être suprême et le code.
 La Codologie traite de l’esprit et du  code, non du corps ou du mental, et estime que l’Homme est bien plus que le produit de son environnement ou de ses gènes mais le produit du Code.
 La Codologie comprend un ensemble de connaissances qui découlent de certaines vérités fondamentales. Les premières de celles-ci sont :
 Le code est un être spirituel immortel.
