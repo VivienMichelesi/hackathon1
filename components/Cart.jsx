@@ -67,7 +67,7 @@ export default function Cart() {
             ))}
       </ul>
 
-      <strong>Total : {totalPrice}€</strong>
+      <strong suppressHydrationWarning={true}>Total : {totalPrice}€</strong>
     </div>
   );
 }

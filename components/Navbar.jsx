@@ -23,7 +23,7 @@ const links = [
   },
 
   {
-    title: "nous rejoindre",
+    title: "Nous rejoindre",
     description: "Praise the windows",
     url: "/JoinUs",
   },
@@ -54,6 +54,7 @@ export default function Navbar() {
             onClick={() => {
               setOpenPanel(!openPanel);
             }}
+            suppressHydrationWarning={true}
           >
             {openPanel ? "Fermer" : "Ouvrir"} le panier
             {cartQuantity > 0 && (
