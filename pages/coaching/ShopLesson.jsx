@@ -51,7 +51,7 @@ export default function ShopLesson() {
         <div className={styles.row}>
           <div className={styles.formGroup}>
             <label htmlFor="cardname" className={styles.label}>
-              Nom isncrit sur la carte
+              Nom inscrit sur la carte
               <input
                 type="text"
                 className={styles.input}
@@ -101,11 +101,11 @@ export default function ShopLesson() {
       <p className={styles.freeMind}>
         Pour accéder à l'illumination détachez vous de vos biens matériels
       </p>
-      <Link href="/coaching/VideoCards">
-        <a title="Réussir dans la vie" className={styles.paye}>
-          Se libérer
-        </a>
-      </Link>
+      <div className={styles.paye}>
+        <Link href="/coaching/VideoCards">
+          <a title="Réussir dans la vie">Se libérer</a>
+        </Link>
+      </div>
     </div>
   );
 }
