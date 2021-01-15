@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  min-width: 992px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
