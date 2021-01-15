@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { getAllProducts } from "../products2";
@@ -7,7 +7,7 @@ import styles from "../styles/Products.module.css";
 export default function Products() {
   const products = getAllProducts();
 
-  const [productsToDisplay, setProductsToDisplay] = useState(products);
+  // const [productsToDisplay, setProductsToDisplay] = useState(products);
 
   return (
     <div className="Products">
@@ -29,7 +29,7 @@ export default function Products() {
         </button>
       </div>
       <div className={styles.cardGroup}>
-        {productsToDisplay.map((product) => (
+        {products.map((product) => (
           <div className={styles.card} key={products.id}>
             <img
               className={styles.img}

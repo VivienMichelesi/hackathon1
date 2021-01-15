@@ -1,5 +1,9 @@
 .footer {
-  display: flex;
+  /* display: flex; */
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  height: 3em;
 }
 
 .logo {
