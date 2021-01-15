@@ -19,19 +19,19 @@ export default function Apropos() {
             alt="Ben et l'illumination"
           />
           <figcaption className={styles.figcaption}>
-            Ben recevant l'illumination de Saint Windows
+            Ben recevant l&apos;illumination de Saint Windows
           </figcaption>
         </figure>
         <p>
           <strong>Qui est Benoit L. Hubert?</strong>
           <br />
           Notre sauveteur était un utopiste informatien qui à dédier sa vie à
-          transmettre sa connaissance à des personnes en recherche d'un avenir
-          meilleur. Il est malheuressement limité par un facteur souvent
+          transmettre sa connaissance à des personnes en recherche d&apos;un
+          avenir meilleur. Il est malheuressement limité par un facteur souvent
           rencontré chez les développeurs: il était adorateur de Linux. Une nuit
-          cependant, pendant qu'il était en train de régler sa carte son pour la
-          10ème fois, le grand Windows lui est apparu. Ce fut pour lui une
-          révélaition, et il se jura de porter à travers le monde entier la
+          cependant, pendant qu&apos;il était en train de régler sa carte son
+          pour la 10ème fois, le grand Windows lui est apparu. Ce fut pour lui
+          une révélaition, et il se jura de porter à travers le monde entier la
           grandeur de Windows.
         </p>
       </main>
