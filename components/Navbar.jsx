@@ -44,32 +44,36 @@ export default function Navbar() {
   );
 
   return (
-    <ul id="list" className={styles.list}>
-      {links.map((link) => (
-        <li className={styles.li} key={link.title}>
-          <Link href={link.url}>
-            <a className={styles.link}>{link.title}</a>
-          </Link>
+    <nav className={styles.nav}>
+      <ul id="list" className={styles.list}>
+        <li className={styles.li}>
+          <button
+            className={styles.openCartButton}
+            aria-expanded={openPanel.toString()}
+            aria-controls="cart"
+            onClick={() => {
+              setOpenPanel(!openPanel);
+            }}
+          >
+            {openPanel ? "Fermer" : "Ouvrir"} le panier
+            {cartQuantity > 0 && (
+              <span
+                className={styles.cartCount}
+                title="Articles dans le panier"
+              >
+                {cartQuantity}
+              </span>
+            )}
+          </button>
         </li>
-      ))}
-
-      <li>
-        <button
-          className={styles.openCartButton}
-          aria-expanded={openPanel.toString()}
-          aria-controls="cart"
-          onClick={() => {
-            setOpenPanel(!openPanel);
-          }}
-        >
-          {openPanel ? "Fermer" : "Ouvrir"} le panier
-          {cartQuantity > 0 && (
-            <span className={styles.cartCount} title="Articles dans le panier">
-              {cartQuantity}
-            </span>
-          )}
-        </button>
-      </li>
-    </ul>
+        {links.map((link) => (
+          <li className={styles.li} key={link.title}>
+            <Link href={link.url}>
+              <a className={styles.link}>{link.title}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
