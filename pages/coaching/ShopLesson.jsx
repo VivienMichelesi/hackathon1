@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import styles from "../../styles/ShopLesson.module.css";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function ShopLesson() {
   const { register, handleSubmit, errors } = useForm();
@@ -12,7 +13,11 @@ export default function ShopLesson() {
   const url = "https://www.youtube.com/embed/WrWkiojtxWQ?end=5&controls=0";
   return (
     <div className={`container ${styles.pitch}`}>
-      <h2 className={styles.title}>Accomplir son destin en 6 étapes.</h2>
+      <Head>
+        <title>Accomplissement</title>
+        <link rel="icon" href="/images/windows" />
+      </Head>
+      <h1 className={styles.title}>Accomplir son destin en 6 étapes.</h1>
       <p className={styles.motivate}>
         Afin d’améliorer les choses dans tous les domaines de la société, la
         Fondation pour le bonheur au travers du code de Benoit, association

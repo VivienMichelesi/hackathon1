@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/VideoCards.module.css";
+import Head from "next/head";
 
 const videoLinks = [
   {
@@ -47,21 +48,29 @@ const videoLinks = [
 
 export default function VideoCards({ title, url, description }) {
   return (
-    <div className={`container ${styles.lesson}`}>
-      {videoLinks.map((videoLink) => (
-        <cards className={styles.videoCard}>
-          <h2 className={styles.title}>{videoLink.title}</h2>
-          <iframe
-            src={videoLink.urlKey}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullscreen
-            className={styles.video}
-          >
-            {videoLink.description}
-          </iframe>
-        </cards>
-      ))}
+    <div>
+      <h1 className={styles.h1}>Vers la vérité</h1>
+      <div className={`container ${styles.lesson}`}>
+        <Head>
+          <title>Accomplissement</title>
+          <link rel="icon" href="/images/windows" />
+        </Head>
+
+        {videoLinks.map((videoLink) => (
+          <cards className={styles.videoCard}>
+            <h2 className={styles.title}>{videoLink.title}</h2>
+            <iframe
+              src={videoLink.urlKey}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullscreen
+              className={styles.video}
+            >
+              {videoLink.description}
+            </iframe>
+          </cards>
+        ))}
+      </div>
     </div>
   );
 }
