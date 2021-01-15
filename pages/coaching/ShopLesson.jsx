@@ -29,7 +29,7 @@ export default function ShopLesson() {
         d’honnêteté, de confiance et de respect de soi au sein de toutes les
         cultures.
       </p>
-      <cards className={styles.videoCard}>
+      <article className={styles.videoCard}>
         <h2 className={styles.titleVideo}>
           Devenir développeur, apprendre ou avoir la foi ?
         </h2>
@@ -44,7 +44,7 @@ export default function ShopLesson() {
         >
           Pour être il faut croire
         </iframe>
-      </cards>
+      </article>
 
       {/* form  */}
 

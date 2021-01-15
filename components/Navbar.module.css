@@ -25,6 +25,8 @@
   padding: 12px 0 0 0;
   text-align: center;
   font-size: 16px;
+
+  padding: 1rem 0;
 }
 
 .list {
@@ -35,13 +37,17 @@
 .list .li {
   list-style: none;
   margin: 0 auto;
-  border-left: 2px solid var(--green);
   display: inline-block;
   padding: 0 30px;
   position: relative;
   text-decoration: none;
   text-align: center;
-  font-family: arvo;
+  font-family: "Arvo", serif;
+  font-weight: bold;
+}
+
+.list .li:not(:first-child) {
+  border-left: 2px solid var(--green);
 }
 
 .li .link {
@@ -91,6 +97,6 @@
   }
 
   .list .li {
-    border: none;
+    border: none !important;
   }
 }
