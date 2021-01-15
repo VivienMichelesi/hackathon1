@@ -1,20 +1,17 @@
+import styles from "../styles/Header.module.css";
+import Link from "next/link";
 import Navbar from "./Navbar";
 
 export default function Header() {
-<<<<<<< HEAD
   return (
-    <div>
-      <Navbar>
-        <meta
-          name="viewport"
-          content="barre de navigation"
-          key="menu de navigation"
-        />
-      </Navbar>
-    </div>
-=======
-  return(
-    
->>>>>>> main
+    <header className={styles.headerWindows}>
+      <Link href="/">
+        <img
+          src="/images/banniere.png"
+          alt="banniere"
+          id="windowsBanniere"
+        ></img>
+      </Link>
+    </header>
   );
 }
