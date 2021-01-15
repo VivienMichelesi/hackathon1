@@ -9,7 +9,7 @@ export function ProductCard({ product }) {
           <figure className={styles.figure}>
             <img
               className={styles.image}
-              src={require(`../public${product.image}?webp`)}
+              src={`../public${product.image}?webp`}
               alt=""
               width="400"
               height="250"
